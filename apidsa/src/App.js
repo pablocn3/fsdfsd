@@ -7,9 +7,7 @@ function App() {
 
     <Card
     id='1'
-     alt='Imagen 1'
-     titulo='Titulo de mi Card'
-     parrafo='Parrafo de el Card'/>
+     />
 
     <Card
     id='2'
