@@ -5,7 +5,7 @@ function Card(props){
 
 const [pokemon,setPokemon]=useState({});
 const [isLoading,setIsLoading]=useState(true);
-    const url='https://pokeapi.co/api/v2/pokemon/151'
+    const url=(require('https://pokeapi.co/api/v2/pokemon/${props.id}'))
     const fethApi=async()=>{
         const response=await fetch(url)
         const json=await response.json()
@@ -33,7 +33,3 @@ return(
     <h5 className='contenedorTitulo'> Nombre</h5>
     <p className='contenedorParrafo'>tipo</p>
 </div>
-
-);
-}
-export default Card;
