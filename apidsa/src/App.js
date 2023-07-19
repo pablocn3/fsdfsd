@@ -6,7 +6,7 @@ function App() {
 
 
     <Card
-    id=1
+    
      />
 
     <Card
