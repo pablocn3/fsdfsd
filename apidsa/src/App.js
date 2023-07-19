@@ -6,9 +6,9 @@ function App() {
 
 
     <Card
-    
+    id=1
      />
-
+     
     <Card
     id='2'
      alt='Imagen 1'
