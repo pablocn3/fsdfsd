@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import '../css/estilos.css'
 
 function Card(props){
-
+const {id}={props.IDS}
 const [pokemon,setPokemon]=useState({});
 const [isLoading,setIsLoading]=useState(true);
-    const url='https://pokeapi.co/api/v2/pokemon/${props.id}'
+    const url='https://pokeapi.co/api/v2/pokemon/${id}'
     const fethApi=async()=>{
         const response=await fetch(url)
         const json=await response.json()
